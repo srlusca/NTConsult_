@@ -31,8 +31,10 @@ public class HomeBlogPage extends ConfigWeb {
     public boolean isVisibleSearchField() {
         String screenshot = "src/main/resources/HomePage/" + Screenshots.dateArchive() + "/" + Screenshots.hourArchive() + " CampoSearch.png";
         if (elementSearchField.isDisplayed()) {
+            Screenshots.MakeBorderSuccess(elementSearchField);
+            Screenshots.getPrint(driver, screenshot);
             return true;
-        }
+        };
         Screenshots.getPrint(driver, screenshot);
         return false;
     }

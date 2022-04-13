@@ -24,4 +24,4 @@ Funcionalidade: Pesquisar Artiglo Blog
     Exemplos:
       | inputPesquisa    |
       | Imposto de Renda |
-    #  | Vagas            |
+      | Vagas            |

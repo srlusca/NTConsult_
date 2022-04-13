@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/features"},
         glue = {"steps","utils"},
-        tags = {"@CT_001"},
+        tags = {"@regression"},
         plugin = {"pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json"}
