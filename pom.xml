@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.NTConsult_</groupId>
+    <artifactId>NTConsult_</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- MAVEN COMPILER -->
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <!-- JAVA VERSION -->
+        <java.version>1.8</java.version>
+
+        <!-- SELENIUM -->
+        <selenium-java>4.0.0-alpha-4</selenium-java>
+
+        <!-- CUCUMBER -->
+        <cucumber-java>1.2.5</cucumber-java>
+        <cucumber-junit>1.2.5</cucumber-junit>
+
+        <!-- JUNIT -->
+        <junit>4.13</junit>
+
+        <!-- COMMONS IO -->
+        <commons-io>2.6</commons-io>
+
+        <!-- REPORT BUILDER -->
+        <report-builder>1.0.3</report-builder>
+
+    </properties>
+
+    <dependencies>
+
+        <!-- SELENIUM DEPENDENCIES -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java}</version>
+        </dependency>
+
+        <!-- CUCUMBER DEPENDENCIES -->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-java}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber-junit}</version>
+        </dependency>
+
+        <!-- JUNIT DEPENDENCIES -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit}</version>
+        </dependency>
+
+        <!-- COMMONS IO DEPENDENCIES -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io}</version>
+        </dependency>
+
+        <!-- REPORT BUILDER -->
+        <dependency>
+            <groupId>com.rajatthareja</groupId>
+            <artifactId>reportbuilder</artifactId>
+            <version>${report-builder}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
